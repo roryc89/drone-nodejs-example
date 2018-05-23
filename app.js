@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/user", function(req, res) {
-  res.status(200).json({ name: "appleboy" });
+  res.status(400).json({ name: "appleboy" });
 });
 
 // listen 8080 port
