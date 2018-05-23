@@ -1,4 +1,6 @@
-image: node:latest
-script:
- - npm install
- - npm run compile
+pipeline:
+  build:
+    image: node:latest
+    commands:
+      - npm install
+      - npm run test
